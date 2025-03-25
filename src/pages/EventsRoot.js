@@ -1,12 +1,18 @@
 import React from 'react';
 import EventsNavigation from "../components/EventsNavigation";
-import {Outlet} from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 const EventsRoot = () => {
+    // const navigation = useNavigation();
+
     return (
         <>
             <EventsNavigation />
-            <Outlet />
+            <main>
+                {/*{ navigation.state === 'loading' && <p>Loading....</p> }*/}
+
+                <Outlet />
+            </main>
         </>
     );
 };
